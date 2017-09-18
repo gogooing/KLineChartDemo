@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/combined_list_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="@string/average_price"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/text_size_12sp" />
+
+        <TextView
+            style="@style/ViewMainCommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_price" />
+
+        <TextView
+            style="@style/ViewMainCommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:text="54.29" />
+
+        <TextView
+            android:id="@+id/combined_list_tv_ma5"
+            style="@style/ViewMainCommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:text="17.09" />
+
+        <TextView
+            style="@style/ViewMainCommonText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="33.01%" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

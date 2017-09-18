@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">财经理财</string>
+
+    <string name="k_open">开</string>
+    <string name="k_close">收</string>
+    <string name="k_max">高</string>
+    <string name="k_min">低</string>
+    <string name="k_num">量</string>
+    <string name="k_amount">额</string>
+    <string name="k_exchange">换</string>
+    <string name="k_ma">MA</string>
+    <string name="k_ma5">5:</string>
+    <string name="k_ma10">10:</string>
+    <string name="k_ma20">20:</string>
+    <string name="k_ma30">30:</string>
+
+    <string name="average_price">均价:%1$s</string>
+    <string name="new_price">最新:</string>
+
+    <string name="wan_unit">万手</string>
+    <string name="yi_unit">亿手</string>
+
+    <string name="entity_macd">MACD</string>
+    <string name="entity_kdj">KDJ</string>
+    <string name="entity_wr">WR</string>
+    <string name="entity_rsi">RSI</string>
+    <string name="entity_boll">BOLL</string>
+    <string name="entity_expma">EXPMA</string>
+    <string name="entity_dmi">DMI</string>
+</resources>

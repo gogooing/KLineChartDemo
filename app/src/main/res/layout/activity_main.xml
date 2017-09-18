@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_gray_bg"
+    tools:context="com.sanqius.loro.cjlc.ui.MainActivity">
+
+    <!--<com.sanqius.loro.cjlc.widget.OverScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/windowsBg">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/common_gray_bg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_tv_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:text="0.00"
+                    android:textColor="@color/text_color_red"
+                    android:textSize="@dimen/text_size_22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_max" />
+
+                <TextView
+                    android:id="@+id/main_tv_max"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_open" />
+
+                <TextView
+                    android:id="@+id/main_tv_open"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_num" />
+
+                <TextView
+                    android:id="@+id/main_tv_num"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp">
+
+                    <TextView
+                        android:id="@+id/main_tv_sub"
+                        style="@style/MainCommonText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:id="@+id/main_tv_percent"
+                        style="@style/MainCommonText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="0.00"
+                        android:textColor="@color/text_color_red"
+                        android:textSize="@dimen/text_size_16sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_min" />
+
+                <TextView
+                    android:id="@+id/main_tv_min"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_exchange" />
+
+                <TextView
+                    android:id="@+id/main_tv_exchange"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+                <TextView
+                    style="@style/MainCommonText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="5dp"
+                    android:text="@string/k_amount" />
+
+                <TextView
+                    android:id="@+id/main_tv_amount"
+                    style="@style/MainCommonText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0.00" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/view_main_chart_top_info" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_chart_height"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.sanqius.loro.cjlc.mychart.MyCombinedChartX
+                    android:id="@+id/main_chart_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"></com.sanqius.loro.cjlc.mychart.MyCombinedChartX>
+
+                <com.sanqius.loro.cjlc.mychart.MyCombinedChartX
+                    android:id="@+id/main_chart_volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"></com.sanqius.loro.cjlc.mychart.MyCombinedChartX>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_rl_right"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@color/common_1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="点击进入K线图" />
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_rl_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@color/common_2">
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!--</com.sanqius.loro.cjlc.widget.OverScrollView>-->
+</FrameLayout>

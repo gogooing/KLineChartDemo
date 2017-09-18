@@ -1,0 +1,86 @@
+apply plugin: 'com.android.application'
+
+
+def releaseTime() {
+    return new Date().format("yyyyMMddHHmm")
+//    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+}
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.sanqius.loro.cjlc"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../android.keystore")
+            storePassword "123456"
+            keyAlias "android.keystore"
+            keyPassword "123456"
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField("int", "APP_STATUS", "0")
+            versionNameSuffix "_debug"
+
+            signingConfig signingConfigs.release
+            multiDexEnabled true
+            debuggable true
+            versionNameSuffix "_debug"
+
+        }
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'),
+                    'proguard-rules.pro'
+
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            signingConfig signingConfigs.release
+            //解决包名不能超过6W
+            multiDexEnabled true
+            buildConfigField("int", "APP_STATUS", "2")
+//            versionNameSuffix ".${svnRevision()}"
+        }
+
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                def outputFile = output.outputFile
+                if (variant.buildType.name != "debug" && outputFile != null && outputFile.name.endsWith('.apk')) {
+                    def fileName = outputFile.name.replace(".apk", "_${defaultConfig.versionName}_r_${releaseTime()}.apk")
+                    output.outputFile = new File(outputFile.parent, fileName)
+                }
+            }
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.1.0'
+    testCompile 'junit:junit:4.12'
+
+    compile project(':MPChartLib')
+}

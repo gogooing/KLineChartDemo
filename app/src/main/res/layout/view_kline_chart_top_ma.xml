@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/view_kline_tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="30分"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/k_ma"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/k_ma5"
+            android:textColor="@color/ma5"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/view_kline_tv_ma5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/ma5"
+            android:text="0.00"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ma10"
+            android:text="@string/k_ma10"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/view_kline_tv_ma10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/ma10"
+            android:text="0.00"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ma20"
+            android:text="@string/k_ma20"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/view_kline_tv_ma20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/ma20"
+            android:text="0.00"
+            android:textSize="@dimen/text_size_14sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ma30"
+            android:text="@string/k_ma30"
+            android:textSize="@dimen/text_size_14sp" />
+
+        <TextView
+            android:id="@+id/view_kline_tv_ma30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:textColor="@color/ma30"
+            android:text="0.00"
+            android:textSize="@dimen/text_size_14sp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

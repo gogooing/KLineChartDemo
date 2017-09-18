@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="windowsBg">#FFFFFF</color>
+    
+    <!-- top -->
+    <color name="common_gray_bg">#F5F5F5</color>
+
+    <!-- text-->
+    <color name="text_color_common">#666666</color>
+    <color name="text_color_red">#FF0000</color>
+    <color name="text_color_orange">#FCAE05</color>
+    <color name="text_color_maroon">#CD0000</color>
+    
+    <!-- common -->
+    <color name="common_1">#EEE9BF</color>
+    <color name="common_2">#C0FF3E</color>
+
+    <!-- chart -->
+    <color name="marker_bg">#1C232E</color>
+    <color name="marker_line_bg">#000000</color>
+    <color name="marker_text_bg">#000000</color>
+    <color name="border_color">#A7ADBC</color>
+    <color name="mine_label_txt">#A7ADBC</color>
+    <color name="minute_jizhun">#7F9976</color>
+    <color name="minute_blue">#00D0FC</color>
+    <color name="minute_yellow">#E7B448</color>
+
+    <color name="ma5">#823E66</color>
+    <color name="ma10">#B99C7A</color>
+    <color name="ma20">#3C7193</color>
+    <color name="ma30">#7F9976</color>
+
+    <color name="increasing_color">#CD2626</color>
+    <color name="decreasing_color">#006400</color>
+</resources>
