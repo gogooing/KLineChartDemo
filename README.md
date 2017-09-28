@@ -11,4 +11,13 @@ K Line Stock Chart which base on MPAndroidChart
 ![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/screenshot5.gif)
 ![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/screenshot6.gif)
 
+
+国庆要到了，下次更新应该会在国庆之后，大家国庆中秋快乐！！
+
 如有疑问欢迎加QQ：2414126657
+
+如果想支持我，也欢迎：
+
+
+![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_alipay.jpg)
+![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_wechat.jpg)
