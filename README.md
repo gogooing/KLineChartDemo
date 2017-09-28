@@ -19,5 +19,5 @@ K Line Stock Chart which base on MPAndroidChart
 如果想支持我，也欢迎：
 
 
-![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_alipay.jpg)
-![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_wechat.jpg)
+![支付宝](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_alipay.jpg)
+![微信](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/pay_wechat.jpg)
