@@ -14,5 +14,5 @@ K Line Stock Chart which base on MPAndroidChart
 
 国庆要到了，下次更新应该会在国庆之后，大家国庆中秋快乐！！
 
-如有疑问欢迎加QQ：2414126657
+如有疑问欢迎加QQ群：489231484
 
