@@ -4,7 +4,7 @@ apply plugin: 'maven'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '25.0.0'
+    buildToolsVersion '26.0.2'
     // resourcePrefix 'mpcht'
     defaultConfig {
         minSdkVersion 8
@@ -20,6 +20,8 @@ android {
                 manifest.srcFile 'AndroidManifest.xml'
             }
         }
+
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
     }
     buildTypes {
         release {
