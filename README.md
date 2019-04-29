@@ -12,7 +12,7 @@ K Line Stock Chart which base on MPAndroidChart
 ![截图](https://github.com/gogooing/KLineChartDemo/blob/master/Screenshot/screenshot6.gif)
 
 
-国庆要到了，下次更新应该会在国庆之后，大家国庆中秋快乐！！
+此项目暂不维护：请跳转https://github.com/gogooing/KlineChart-master
 
 如有疑问欢迎加QQ群：489231484
 
